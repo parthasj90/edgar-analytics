@@ -1,4 +1,5 @@
 from datetime import datetime
+import os
 
 #class to store the required information of a particular ip address
 class node:
@@ -23,7 +24,7 @@ def main():
     #filenames
     log_filename = "./input/log.csv"
     inactivity_filename = "./input/inactivity_period.txt"
-
+	
     #read the inactivity file and store the timeout duration in a variable
     inactivity = open(inactivity_filename,'r')
     timeout = float(inactivity.read())
